@@ -1,0 +1,107 @@
+<HTML>
+    <head>
+        <style>
+            .div1 {
+                margin-top: 15px;
+            }
+
+            #title_div {
+                text-align: center;
+                color: white;
+                background: black;
+                padding-top: 30px;
+                padding-bottom:30px;
+            }
+            .div_form {
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom:100px;
+                position: center;
+            }
+            .div_form2 {
+                text-align: left;
+                padding-left: 650px;
+            }
+            .div_image {
+                height: 70px;
+                width: 70px;
+            }
+            .back_image {
+                height: 70px;
+                width: 70px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id = "title_div">
+            <h1>
+                Form
+            </h1>
+        </div><hr>
+
+        <div class = "back_image">
+            <image src = "BingImageOfTheDay.jpg">
+        </div>
+        <div class = "div_form">
+            <div>
+                
+                <div class = "div_form2">
+                    <form method = "post"; enctype = "multipart/form-data" action = "index.php">
+                        <div class = "div1">
+                            <span>
+                                <label for = "name">Name:
+                                </label>
+                                <input type = "text"; name = "fName"; placeholder = "First name">
+                                <input type = "text"; name = "lName"; placeholder = "Last name">
+                            </span>
+                        </div>
+
+                        <div class = "div1">
+                            <span>
+                                <label for = "dob">Date of birth:
+                                </label>
+                                <input type = "date"; name = "dob";>
+                            </span>
+                        </div>
+                        
+                        <div class = "div1">
+                            <span>
+                                <label for = "gender">Gender:
+                                </label>
+                                <input type = "radio"; name = "mFRButton"; checked> Male
+                                <input type = "radio"; name = "mFRButton";> Female
+                            </span>
+                        </div>
+                        <div class = "div1">
+                            <label for = "doc_type">ID proof type: 
+                            </label>
+                            <select name = "selectBox1"; value = "sb1" required>
+                                <option selected> --select-- </option>
+                                <option value = "aadhar"> Aadhar card </option>
+                                <option value = "voter"> Voter card </option>
+                                <option value = "passport"> Passport </option> 
+                            </select><br>
+                        </div>
+
+                        <div class = "div1">
+                            <label for = "doc">Upload ID proof: 
+                            </label>
+                            <input type = "file" name = "doc" required>
+                        </div>
+
+                        <div class = "div1">
+                            <label for = "image">Upload image: 
+                            </label>
+                            <input type = "file" name = "image" required>
+                        </div>
+
+                        <div class = "div1">
+                            <input type = "submit"; value = "Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
